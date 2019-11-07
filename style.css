@@ -2,7 +2,7 @@
 
 
 .container {
-  width: 912px;
+  width: 672px;
   display: block;
   margin: auto;
   position: relative;
@@ -44,6 +44,7 @@
   margin-top: 40px;
   padding: 53px;
   z-index: 3 !important;
+  transform: translateX(-75px);
 }
 
 .nav {

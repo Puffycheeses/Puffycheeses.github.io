@@ -2,7 +2,7 @@
 
 
 .container {
-  width: min(75vw, 882);
+  width: 912px;
   display: block;
   margin: auto;
   position: relative;
@@ -37,12 +37,12 @@
   position: absolute;
   background-color: white;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 10);
-  width: 20vw;
-  height: auto;
+  width: 215px;
+  height: 95px;
   top: 0;
   left: 0;
-  margin: 5vh;
-  padding: 5vh;
+  margin-top: 40px;
+  padding: 53px;
   z-index: 3 !important;
 }
 
@@ -63,12 +63,16 @@
   margin-left: 50%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 912px) {
   .overlay {
     display: none;
   }
 
   #image {
     height: auto
+  }
+
+  .container {
+    width: 75vw;
   }
 }

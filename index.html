@@ -4,6 +4,12 @@
   </head>
   <body>
     <div class='container'>
+      <div class='overlay'>
+        The Key to modern art:
+        <br /><input onclick='calc(this)' type="checkbox" id='Acclaimed' checked> Acclaimed
+        <br /><input onclick='calc(this)' type="checkbox" id='Affordable'> Affordable
+        <br /><input onclick='calc(this)' type="checkbox" id='Popular' checked> Popular
+      </div>
       <div class='header'>
         <h1 class='heading'>pfych</h1>
         <div class='subHeading'>What is <span id='question'></span>?</div>
@@ -12,7 +18,6 @@
       <div class='images'>
         <img id='image'></img>
         <div class='imageFooter'>
-          
           <h2 id='title'></h2>
           <div id='description'></div>
         </div>
@@ -20,20 +25,6 @@
     </div>
     <div class='nav left' onclick="load(-1)"></div>
     <div class='nav right' onclick="load(1)"></div>
-    <div class='overlay'>
-        The Key to modern art:
-        <br /><input onclick='calc(this)' type="checkbox" id='Acclaimed'> Acclaimed
-        <br /><input onclick='calc(this)' type="checkbox" id='Affordable'> Affordable
-        <br /><input onclick='calc(this)' type="checkbox" id='Popular'> Popular
-        <!-- <hr />
-        <div class='nav'>
-          <a onclick='load(`oldest`)' href="#"><<</a>
-          <a onclick='load(-1)' href="#"><</a>
-          <a onclick='load()' href="#">?</a>
-          <a onclick='load(1)' href="#">></a>
-          <a onclick='load(`latest`)' href="#">>></a>
-        </div> -->
-      </div>
   </body>
 </html>
 <script src='script.js'></script>

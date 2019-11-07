@@ -15,6 +15,11 @@ const images = [
         'url': 'BAU.png',
         'title': 'Buisness as usual',
         'description': '2019 - GIMP, iPhone 5s<br/>I\'m keen to sell out'
+    },
+    {
+        'url': 'onceImABillionare.png',
+        'title': 'People wouldnt display this',
+        'description': '2019 - GIMP, iPhone X, Reddit<br/>Use provided paint once I\'m a billionare'
     }
 ]
 

@@ -20,6 +20,11 @@ const images = [
         'url': 'onceImABillionare.png',
         'title': 'People wouldnt display this',
         'description': '2019 - GIMP, iPhone X, Reddit<br/>Use provided paint once I\'m a billionare'
+    },
+    {
+        'url': 'Panic.png',
+        'title': 'Take daily until mental health improves',
+        'description': '2019 - GIMP, iPhone X, Stock Images<br/>Everythings moving slow'
     }
 ]
 

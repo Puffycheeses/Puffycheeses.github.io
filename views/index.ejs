@@ -3,12 +3,14 @@
     <link rel='stylesheet' type='text/css' href='/css/style.css' />
   </head>
   <body>
+      <script>
+        const images = <%- JSON.stringify(db.elements.findElements(_ => _.template == 'o00ln5yp0a')) %>;
+        const things = (<%- JSON.stringify(db.elements.findElements(_ => _.template == '89udc2zopb4')) %>)[0].fields.things.split('\n');
+      </script>
     <div class='container'>
       <div class='overlay'>
-        The Key to modern art:
-        <br /><input onclick='calc(this)' type="checkbox" id='Acclaimed' checked> Acclaimed
-        <br /><input onclick='calc(this)' type="checkbox" id='Affordable'> Affordable
-        <br /><input onclick='calc(this)' type="checkbox" id='Popular' checked> Practical
+          <% const overlay = (await db.elements.findElements(_ => _.template == 'h8ua2zjyzkp'))[0]; %>
+          <%- overlay.fields.content %>
       </div>
       <div class='header'>
         <h1 class='heading'>pfych</h1>
@@ -16,11 +18,11 @@
       </div>
       <hr/>
       <div class='images'>
-        <img id='image'></img>
-        <div class='imageFooter'>
-          <h2 id='title'></h2>
-          <div id='description'></div>
-        </div>
+          <img id='image'>
+          <div class='imageFooter'>
+            <h2 id='title'></h2>
+            <div id='description'></div>
+          </div>
       </div>
     </div>
     <div class='nav left' onclick="load(-1)"></div>

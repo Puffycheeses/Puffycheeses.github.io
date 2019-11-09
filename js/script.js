@@ -1,35 +1,17 @@
-const things = [
-    'minimalism',
-    'valued',
-    'collectable',
-    'popular'
-]
 
-const images = [
-    {
-        'url': 'face.png',
-        'title': 'I cant wait for my face to be more distorted lmao',
-        'description': '2019 - GIMP, iPhone 7 & iMessage<br/>Anonymity is our only power'
-    },
-    {
-        'url': 'BAU.png',
-        'title': 'Buisness as usual',
-        'description': '2019 - GIMP, iPhone 5s<br/>I\'m keen to sell out'
-    },
-    {
-        'url': 'onceImABillionare.png',
-        'title': 'People wouldnt display this',
-        'description': '2019 - GIMP, iPhone X, Reddit<br/>Use provided paint once I\'m a billionare'
-    },
-    {
-        'url': 'Panic.png',
-        'title': 'Take daily until mental health improves',
-        'description': '2019 - GIMP, iPhone X, Stock Images<br/>Everythings moving slow'
-    }
-]
+let descriptionElement = document.getElementById('description')
+let questionElement = document.getElementById('question')
+let affordable = document.getElementById('Affordable')
+let headingElement = document.getElementById('title')
+let acclaimed = document.getElementById('Acclaimed')
+let imageElement = document.getElementById('image')
+let popular = document.getElementById('Popular')
+let all = [acclaimed, affordable, popular]
+var currentImage = images.length-1
+let set = [acclaimed, popular]
+let trigger = 0
 
 function question (things) {
-    
     questionElement.innerHTML = things[Math.floor(Math.random() * (things.length - 0))]
 }
 
@@ -46,9 +28,9 @@ function load (index) {
 
     if (currentImage < 0 || currentImage >= images.length) return
 
-    imageElement.src = `/img/${images[currentImage].url}`
-    headingElement.innerHTML = `${images[currentImage].title}`
-    descriptionElement.innerHTML = `${images[currentImage].description}`
+    imageElement.src = `/api/file/${images[currentImage].fields.image}`
+    headingElement.innerHTML = `${images[currentImage].fields.title}`
+    descriptionElement.innerHTML = `${images[currentImage].fields.description}`
 }
 
 function calc (self) {
@@ -60,18 +42,7 @@ function calc (self) {
     trigger += 1
 }
 
-let imageElement = document.getElementById('image')
-let headingElement = document.getElementById('title')
-let descriptionElement = document.getElementById('description')
-let questionElement = document.getElementById('question')
-var currentImage = images.length-1
-let acclaimed = document.getElementById('Acclaimed')
-let affordable = document.getElementById('Affordable')
-let popular = document.getElementById('Popular')
 
-let all = [acclaimed, affordable, popular]
-let set = [acclaimed, popular]
-let trigger = 0
 
 calc()
 question(things)

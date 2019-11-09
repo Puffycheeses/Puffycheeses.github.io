@@ -46,7 +46,7 @@ function load (index) {
 
     if (currentImage < 0 || currentImage >= images.length) return
 
-    imageElement.src = `./images/${images[currentImage].url}`
+    imageElement.src = `/img/${images[currentImage].url}`
     headingElement.innerHTML = `${images[currentImage].title}`
     descriptionElement.innerHTML = `${images[currentImage].description}`
 }

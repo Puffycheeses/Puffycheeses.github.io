@@ -1,0 +1,11 @@
+{
+
+	"short_name": "pfych",
+	"name": "pfych",
+	"start_url": "/#",
+	"display": "standalone",
+	"background_color": "white",
+	"theme_color": "white",
+	"purpose": "any"
+
+}
